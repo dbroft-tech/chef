@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Chef's Kitchen</title>
+    <meta name="description" content="Get in touch with Chef's Kitchen for reservations, catering, or any inquiries.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-top">Chef's</span>
+                    <span class="logo-main">Kitchen</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="food.html" class="nav-link">Food</a></li>
+                    <li><a href="chef.html" class="nav-link">Chef</a></li>
+                    <li><a href="contacts.html" class="nav-link active">Contacts</a></li>
+                </ul>
+                
+                <div class="nav-contact">
+                    <span class="phone">📞 888-000-4298</span>
+                    <a href="contacts.html" class="btn btn-primary">Request a call</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 60vh; padding-top: 100px;">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content" style="text-align: center;">
+                <div class="hero-text" style="margin: 0 auto;">
+                    <h1>Contact <span>Us</span></h1>
+                    <p>We'd love to hear from you. Reach out for reservations, inquiries, or just to say hello.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="section" style="padding-top: 0; margin-top: -50px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div style="background: var(--bg-card); padding: 40px 30px; border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: all 0.3s ease;">
+                    <div style="width: 60px; height: 60px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.5rem;">📞</div>
+                    <h3 style="margin-bottom: 10px;">Phone</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 5px;">Reservations: 888-000-4298</p>
+                    <p style="color: var(--text-gray);">Catering: 888-000-4299</p>
+                </div>
+                
+                <div style="background: var(--bg-card); padding: 40px 30px; border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: all 0.3s ease;">
+                    <div style="width: 60px; height: 60px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.5rem;">📧</div>
+                    <h3 style="margin-bottom: 10px;">Email</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 5px;">info@chefskitchen.com</p>
+                    <p style="color: var(--text-gray);">events@chefskitchen.com</p>
+                </div>
+                
+                <div style="background: var(--bg-card); padding: 40px 30px; border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: all 0.3s ease;">
+                    <div style="width: 60px; height: 60px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.5rem;">📍</div>
+                    <h3 style="margin-bottom: 10px;">Location</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 5px;">123 Gourmet Avenue</p>
+                    <p style="color: var(--text-gray);">New York, NY 10001</p>
+                </div>
+                
+                <div style="background: var(--bg-card); padding: 40px 30px; border-radius: 20px; text-align: center; border: 1px solid var(--border-color); transition: all 0.3s ease;">
+                    <div style="width: 60px; height: 60px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.5rem;">🕐</div>
+                    <h3 style="margin-bottom: 10px;">Hours</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 5px;">Mon - Thu: 11am - 10pm</p>
+                    <p style="color: var(--text-gray);">Fri - Sat: 11am - 11pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="section" style="background: var(--bg-card);">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Send Us a</span> Message</h2>
+                <p>Fill out the form below and we'll get back to you shortly</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+                <form style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">First Name</label>
+                            <input type="text" required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none; transition: all 0.3s ease;" placeholder="John">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Last Name</label>
+                            <input type="text" required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none; transition: all 0.3s ease;" placeholder="Doe">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Email</label>
+                        <input type="email" required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none; transition: all 0.3s ease;" placeholder="john@example.com">
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Phone</label>
+                        <input type="tel" style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none; transition: all 0.3s ease;" placeholder="+1 (555) 123-4567">
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Subject</label>
+                        <select required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none; transition: all 0.3s ease; cursor: pointer;">
+                            <option value="">Select a subject</option>
+                            <option value="reservation">Table Reservation</option>
+                            <option value="catering">Catering Inquiry</option>
+                            <option value="event">Private Event</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Message</label>
+                        <textarea rows="5" required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none; transition: all 0.3s ease; resize: vertical;" placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Send Message</button>
+                </form>
+                
+                <div style="border-radius: 20px; overflow: hidden; height: 100%; min-height: 400px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2!2d-73.9857!3d40.7484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjIiTiA3M8KwNTknMDguNSJX!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 500px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Make a</span> Reservation</h2>
+                <p>Book your table for an unforgettable dining experience</p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto; background: var(--bg-card); padding: 50px; border-radius: 30px; border: 1px solid var(--border-color);">
+                <form style="display: flex; flex-direction: column; gap: 25px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Date</label>
+                            <input type="date" required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none; cursor: pointer;">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Time</label>
+                            <select required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none; cursor: pointer;">
+                                <option value="">Select time</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Guests</label>
+                            <select required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none; cursor: pointer;">
+                                <option value="">Number of guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7+">7+ People</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Name</label>
+                            <input type="text" required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none;" placeholder="Full Name">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Email</label>
+                            <input type="email" required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none;" placeholder="Email Address">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Phone</label>
+                            <input type="tel" required style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none;" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-gray); font-size: 0.9rem;">Special Requests</label>
+                        <textarea rows="3" style="width: 100%; padding: 15px; border: 1px solid var(--border-color); background: var(--bg-dark); color: var(--text-white); border-radius: 10px; outline: none; resize: vertical;" placeholder="Any dietary restrictions, special occasions, or seating preferences?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size: 1.1rem;">Confirm Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--bg-card);">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Frequently Asked</span> Questions</h2>
+                <p>Find quick answers to common questions</p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                <details style="background: var(--bg-dark); border-radius: 15px; overflow: hidden;">
+                    <summary style="padding: 25px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                        Do you accept walk-ins?
+                        <span style="color: var(--primary-color); font-size: 1.5rem;">+</span>
+                    </summary>
+                    <div style="padding: 0 25px 25px; color: var(--text-gray);">
+                        Yes, we do accept walk-ins based on availability. However, we highly recommend making a reservation, especially for weekends and special occasions, to ensure you get your preferred time and seating.
+                    </div>
+                </details>
+                
+                <details style="background: var(--bg-dark); border-radius: 15px; overflow: hidden;">
+                    <summary style="padding: 25px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                        What is your dress code?
+                        <span style="color: var(--primary-color); font-size: 1.5rem;">+</span>
+                    </summary>
+                    <div style="padding: 0 25px 25px; color: var(--text-gray);">
+                        Our dress code is smart casual. We want you to feel comfortable while maintaining an elegant atmosphere. We kindly ask guests to avoid athletic wear, beachwear, and flip-flops.
+                    </div>
+                </details>
+                
+                <details style="background: var(--bg-dark); border-radius: 15px; overflow: hidden;">
+                    <summary style="padding: 25px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                        Do you accommodate dietary restrictions?
+                        <span style="color: var(--primary-color); font-size: 1.5rem;">+</span>
+                    </summary>
+                    <div style="padding: 0 25px 25px; color: var(--text-gray);">
+                        Absolutely! We offer vegetarian, vegan, gluten-free, and other options. Please inform us of any allergies or dietary restrictions when making your reservation, and our chefs will be happy to accommodate your needs.
+                    </div>
+                </details>
+                
+                <details style="background: var(--bg-dark); border-radius: 15px; overflow: hidden;">
+                    <summary style="padding: 25px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                        Is there parking available?
+                        <span style="color: var(--primary-color); font-size: 1.5rem;">+</span>
+                    </summary>
+                    <div style="padding: 0 25px 25px; color: var(--text-gray);">
+                        Yes, we offer complimentary valet parking for dinner guests. There is also a public parking garage adjacent to the restaurant with validated parking for lunch guests.
+                    </div>
+                </details>
+                
+                <details style="background: var(--bg-dark); border-radius: 15px; overflow: hidden;">
+                    <summary style="padding: 25px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                        Can I book a private event?
+                        <span style="color: var(--primary-color); font-size: 1.5rem;">+</span>
+                    </summary>
+                    <div style="padding: 0 25px 25px; color: var(--text-gray);">
+                        Yes! We have private dining rooms available for events ranging from intimate dinners to corporate gatherings. Please contact our events team at events@chefskitchen.com or call us for more information and availability.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-top">Chef's</span>
+                        <span class="logo-main">Kitchen</span>
+                    </a>
+                    <p>Experience the finest culinary delights crafted with passion and the freshest ingredients.</p>
+                    <div class="footer-social">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">i</a>
+                        <a href="#">y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="food.html">Our Menu</a></li>
+                        <li><a href="chef.html">Our Chefs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Reservations</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Mon - Thu: 11am - 10pm</li>
+                        <li>Fri - Sat: 11am - 11pm</li>
+                        <li>Sunday: 10am - 9pm</li>
+                        <li><a href="contacts.html">📞 888-000-4298</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chef's Kitchen. All Rights Reserved.</p>
+                <p>Designed with ❤️ for food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Kitchen - Premium Restaurant</title>
+    <meta name="description" content="Experience culinary excellence at Chef's Kitchen. Fine dining, fresh ingredients, expert chefs.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-top">Chef's</span>
+                    <span class="logo-main">Kitchen</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="food.html" class="nav-link">Food</a></li>
+                    <li><a href="chef.html" class="nav-link">Chef</a></li>
+                    <li><a href="contacts.html" class="nav-link">Contacts</a></li>
+                </ul>
+                
+                <div class="nav-contact">
+                    <span class="phone">📞 888-000-4298</span>
+                    <a href="contacts.html" class="btn btn-primary">Request a call</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>CHOOSE OUR HEALTHY <span>PLATTER</span><br><span>ENSURE</span> A GOOD HEALTH</h1>
+                    <p>We offer quality food chart and help our customers to maintain a healthy food habit. Your health security is our first priority as we never compromise with the food quality.</p>
+                    <div class="hero-buttons">
+                        <a href="contacts.html" class="btn btn-primary">Reserve a Table</a>
+                        <a href="food.html" class="btn btn-outline">Book Now</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="decoration"></div>
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=500&fit=crop" alt="Delicious Steak Platter">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / History Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3><span>Discover</span><br>OUR HISTORY</h3>
+                    <p><strong>Culinary Diversity:</strong> Restaurants offer a wide array of cuisines, reflecting the cultural diversity of the regions they serve. This diversity ranges from traditional local dishes to international fare, allowing customers to explore a variety of flavors.</p>
+                    <p><strong>Innovation and Trends:</strong> The restaurant sector is continuously evolving, driven by changing consumer preferences and industry trends. New culinary concepts, fusion cuisines, and healthy eating options are some examples of ongoing trends.</p>
+                    <p><strong>Challenges:</strong> The restaurant business faces numerous challenges, including intense competition, rising food costs, labor shortages, changing consumer preferences, and compliance with health and safety regulations.</p>
+                    <p>The restaurant industry, also known as the foodservice sector, is a vital part of the global economy and plays a significant role in providing food and beverage services to consumers. It is a diverse and dynamic sector that encompasses a wide range of dining establishments, from fast-food chains to fine dining restaurants, cafés, and food trucks.</p>
+                </div>
+                <div class="about-images">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop" alt="Restaurant Interior">
+                    </div>
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop" alt="Fine Dining">
+                    </div>
+                    <div class="about-img tall">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=600&fit=crop" alt="Gourmet Food">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Our Delicious</span> MENU</h2>
+                <p>We have a wide variety of dishes to choose from. Our menu includes appetizers, main courses, desserts, and beverages.</p>
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="breakfast">Breakfast</button>
+                <button class="tab-btn" data-category="lunch">Lunch</button>
+                <button class="tab-btn" data-category="dinner">Dinner</button>
+                <button class="tab-btn" data-category="dessert">Dessert</button>
+                <button class="tab-btn" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-card" data-category="breakfast">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop" alt="Pancakes">
+                        <span class="menu-badge">Breakfast</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Fluffy Pancakes</h4>
+                        <p>Served with maple syrup, fresh berries, and whipped cream</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$12</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 1, name: 'Fluffy Pancakes', price: 12})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="lunch">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Burger">
+                        <span class="menu-badge">Lunch</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Gourmet Burger</h4>
+                        <p>Angus beef patty with cheddar, lettuce, tomato, and special sauce</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$18</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 2, name: 'Gourmet Burger', price: 18})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="dinner">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?w=400&h=300&fit=crop" alt="Steak">
+                        <span class="menu-badge">Dinner</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Grilled Ribeye</h4>
+                        <p>Prime cut steak with roasted vegetables and herb butter</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$42</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 3, name: 'Grilled Ribeye', price: 42})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="dessert">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop" alt="Chocolate Cake">
+                        <span class="menu-badge">Dessert</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Chocolate Lava Cake</h4>
+                        <p>Decadent chocolate cake with molten center and vanilla ice cream</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$14</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 4, name: 'Chocolate Lava Cake', price: 14})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop" alt="Coffee">
+                        <span class="menu-badge">Drinks</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Artisan Coffee</h4>
+                        <p>Freshly brewed espresso with steamed milk and latte art</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$6</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 5, name: 'Artisan Coffee', price: 6})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="dinner">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop" alt="Salmon">
+                        <span class="menu-badge">Dinner</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Pan-Seared Salmon</h4>
+                        <p>Fresh Atlantic salmon with lemon butter sauce and asparagus</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$34</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 6, name: 'Pan-Seared Salmon', price: 34})">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section class="promo">
+        <div class="container">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <h3>Get <span>30% off</span> on all of our dishes</h3>
+                    <p>Join our Food Festival and enjoy exclusive discounts on our entire menu. Sign up with your email to receive the discount code and special offers.</p>
+                    <form class="promo-form" onsubmit="event.preventDefault(); showNotification('Thank you for subscribing!', 'success'); this.reset();">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Get Offer</button>
+                    </form>
+                </div>
+                <div class="promo-image">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&h=400&fit=crop" alt="Food Festival">
+                    <div class="discount-badge">
+                        <span class="percent">30%</span>
+                        <span class="text">OFF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs Section -->
+    <section class="section" id="chefs">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Meet Our</span> BEST CHEF'S</h2>
+                <p>Our team of experienced chefs brings passion and creativity to every dish they create.</p>
+            </div>
+            
+            <div class="chefs-grid">
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1583394293214-28ez15e93e7e?w=400&h=400&fit=crop" alt="Chef Marco">
+                    </div>
+                    <div class="chef-info">
+                        <h4>Marco Rossi</h4>
+                        <p>Head Chef</p>
+                        <div class="chef-social">
+                            <a href="#" aria-label="Facebook">f</a>
+                            <a href="#" aria-label="Twitter">t</a>
+                            <a href="#" aria-label="Instagram">i</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=400&fit=crop" alt="Chef Sarah">
+                    </div>
+                    <div class="chef-info">
+                        <h4>Sarah Chen</h4>
+                        <p>Sous Chef</p>
+                        <div class="chef-social">
+                            <a href="#" aria-label="Facebook">f</a>
+                            <a href="#" aria-label="Twitter">t</a>
+                            <a href="#" aria-label="Instagram">i</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=400&h=400&fit=crop" alt="Chef Antonio">
+                    </div>
+                    <div class="chef-info">
+                        <h4>Antonio Garcia</h4>
+                        <p>Pastry Chef</p>
+                        <div class="chef-social">
+                            <a href="#" aria-label="Facebook">f</a>
+                            <a href="#" aria-label="Twitter">t</a>
+                            <a href="#" aria-label="Instagram">i</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chef-card">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=400&h=400&fit=crop" alt="Chef Emily">
+                    </div>
+                    <div class="chef-info">
+                        <h4>Emily Watson</h4>
+                        <p>Line Cook</p>
+                        <div class="chef-social">
+                            <a href="#" aria-label="Facebook">f</a>
+                            <a href="#" aria-label="Twitter">t</a>
+                            <a href="#" aria-label="Instagram">i</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Our Happy</span> CUSTOMER</h2>
+                <p>See what our customers have to say about their dining experience.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Customer">
+                    </div>
+                    <p class="testimonial-text">"The food was absolutely amazing! The ambiance was perfect and the service was impeccable. This is now my favorite restaurant in the city."</p>
+                    <div class="testimonial-author">
+                        <h4>John Smith</h4>
+                        <p>Food Critic</p>
+                    </div>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Customer">
+                    </div>
+                    <p class="testimonial-text">"A truly unforgettable dining experience. The chef's special was out of this world. I highly recommend this place for any special occasion."</p>
+                    <div class="testimonial-author">
+                        <h4>Michael Brown</h4>
+                        <p>Regular Customer</p>
+                    </div>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face" alt="Customer">
+                    </div>
+                    <p class="testimonial-text">"Exceptional quality and service. The staff was very attentive and the dishes were beautifully presented. Will definitely be coming back!"</p>
+                    <div class="testimonial-author">
+                        <h4>David Wilson</h4>
+                        <p>Business Executive</p>
+                    </div>
+                    <div class="rating">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-top">Chef's</span>
+                        <span class="logo-main">Kitchen</span>
+                    </a>
+                    <p>Experience the finest culinary delights crafted with passion and the freshest ingredients. Your satisfaction is our priority.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">t</a>
+                        <a href="#" aria-label="Instagram">i</a>
+                        <a href="#" aria-label="YouTube">y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="food.html">Our Menu</a></li>
+                        <li><a href="chef.html">Our Chefs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Reservations</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Mon - Thu: 11am - 10pm</li>
+                        <li>Fri - Sat: 11am - 11pm</li>
+                        <li>Sunday: 10am - 9pm</li>
+                        <li><a href="contacts.html">📞 888-000-4298</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chef's Kitchen. All Rights Reserved.</p>
+                <p>Designed with ❤️ for food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

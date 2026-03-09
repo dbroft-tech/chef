@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Chef's Kitchen</title>
+    <meta name="description" content="Explore our diverse menu featuring breakfast, lunch, dinner, desserts, and beverages crafted with the finest ingredients.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-top">Chef's</span>
+                    <span class="logo-main">Kitchen</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="food.html" class="nav-link active">Food</a></li>
+                    <li><a href="chef.html" class="nav-link">Chef</a></li>
+                    <li><a href="contacts.html" class="nav-link">Contacts</a></li>
+                </ul>
+                
+                <div class="nav-contact">
+                    <span class="phone">📞 888-000-4298</span>
+                    <a href="contacts.html" class="btn btn-primary">Request a call</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 60vh; padding-top: 100px;">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content" style="text-align: center;">
+                <div class="hero-text" style="margin: 0 auto;">
+                    <h1>Our <span>Menu</span></h1>
+                    <p>A culinary journey through carefully crafted dishes using the freshest ingredients and time-honored techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Our Delicious</span> MENU</h2>
+                <p>Explore our carefully curated selection of dishes</p>
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="breakfast">Breakfast</button>
+                <button class="tab-btn" data-category="lunch">Lunch</button>
+                <button class="tab-btn" data-category="dinner">Dinner</button>
+                <button class="tab-btn" data-category="dessert">Dessert</button>
+                <button class="tab-btn" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Breakfast Items -->
+                <div class="menu-card" data-category="breakfast">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop" alt="Pancakes">
+                        <span class="menu-badge">Breakfast</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Fluffy Pancakes</h4>
+                        <p>Served with maple syrup, fresh berries, and whipped cream</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$12</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 1, name: 'Fluffy Pancakes', price: 12})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="breakfast">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1525351484163-7529414395d8?w=400&h=300&fit=crop" alt="Eggs Benedict">
+                        <span class="menu-badge">Breakfast</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Eggs Benedict</h4>
+                        <p>Poached eggs, Canadian bacon, hollandaise sauce on English muffin</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$16</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 7, name: 'Eggs Benedict', price: 16})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="breakfast">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&h=300&fit=crop" alt="Avocado Toast">
+                        <span class="menu-badge">Breakfast</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Avocado Toast</h4>
+                        <p>Smashed avocado on sourdough with poached egg and chili flakes</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$14</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 8, name: 'Avocado Toast', price: 14})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lunch Items -->
+                <div class="menu-card" data-category="lunch">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Burger">
+                        <span class="menu-badge">Lunch</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Gourmet Burger</h4>
+                        <p>Angus beef patty with cheddar, lettuce, tomato, and special sauce</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$18</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 2, name: 'Gourmet Burger', price: 18})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="lunch">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Caesar Salad">
+                        <span class="menu-badge">Lunch</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Caesar Salad</h4>
+                        <p>Romaine lettuce, parmesan, croutons, grilled chicken, caesar dressing</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$15</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 9, name: 'Caesar Salad', price: 15})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="lunch">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop" alt="Pasta">
+                        <span class="menu-badge">Lunch</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Truffle Pasta</h4>
+                        <p>Fettuccine with black truffle cream sauce and parmesan</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$22</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 10, name: 'Truffle Pasta', price: 22})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dinner Items -->
+                <div class="menu-card" data-category="dinner">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?w=400&h=300&fit=crop" alt="Steak">
+                        <span class="menu-badge">Dinner</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Grilled Ribeye</h4>
+                        <p>Prime cut steak with roasted vegetables and herb butter</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$42</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 3, name: 'Grilled Ribeye', price: 42})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="dinner">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop" alt="Salmon">
+                        <span class="menu-badge">Dinner</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Pan-Seared Salmon</h4>
+                        <p>Fresh Atlantic salmon with lemon butter sauce and asparagus</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$34</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 6, name: 'Pan-Seared Salmon', price: 34})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="dinner">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&h=300&fit=crop" alt="Lamb">
+                        <span class="menu-badge">Dinner</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Herb-Crusted Lamb</h4>
+                        <p>Rack of lamb with mint pesto and roasted potatoes</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$38</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 11, name: 'Herb-Crusted Lamb', price: 38})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dessert Items -->
+                <div class="menu-card" data-category="dessert">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop" alt="Chocolate Cake">
+                        <span class="menu-badge">Dessert</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Chocolate Lava Cake</h4>
+                        <p>Decadent chocolate cake with molten center and vanilla ice cream</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$14</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 4, name: 'Chocolate Lava Cake', price: 14})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="dessert">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop" alt="Tiramisu">
+                        <span class="menu-badge">Dessert</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Classic Tiramisu</h4>
+                        <p>Layers of espresso-soaked ladyfingers and mascarpone cream</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$12</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 12, name: 'Classic Tiramisu', price: 12})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="dessert">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop" alt="Cheesecake">
+                        <span class="menu-badge">Dessert</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>New York Cheesecake</h4>
+                        <p>Creamy cheesecake with graham cracker crust and berry compote</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$13</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 13, name: 'New York Cheesecake', price: 13})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Drink Items -->
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop" alt="Coffee">
+                        <span class="menu-badge">Drinks</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Artisan Coffee</h4>
+                        <p>Freshly brewed espresso with steamed milk and latte art</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$6</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 5, name: 'Artisan Coffee', price: 6})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&h=300&fit=crop" alt="Wine">
+                        <span class="menu-badge">Drinks</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>House Red Wine</h4>
+                        <p>Premium selection of red wines from renowned vineyards</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$12</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 14, name: 'House Red Wine', price: 12})">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=400&h=300&fit=crop" alt="Cocktail">
+                        <span class="menu-badge">Drinks</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h4>Signature Cocktail</h4>
+                        <p>Chef's special blend with premium spirits and fresh ingredients</p>
+                        <div class="menu-card-footer">
+                            <span class="price">$15</span>
+                            <button class="add-to-cart" onclick="addToCart({id: 15, name: 'Signature Cocktail', price: 15})">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dietary Information -->
+    <section class="section" style="background: var(--bg-card);">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Dietary</span> Information</h2>
+                <p>We accommodate various dietary needs and preferences</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center;">
+                <div style="padding: 30px; background: var(--bg-dark); border-radius: 15px;">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🌱</div>
+                    <h4>Vegetarian</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Plant-based options available</p>
+                </div>
+                <div style="padding: 30px; background: var(--bg-dark); border-radius: 15px;">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🌾</div>
+                    <h4>Gluten-Free</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Certified gluten-free dishes</p>
+                </div>
+                <div style="padding: 30px; background: var(--bg-dark); border-radius: 15px;">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🥜</div>
+                    <h4>Nut-Free</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Safe for nut allergies</p>
+                </div>
+                <div style="padding: 30px; background: var(--bg-dark); border-radius: 15px;">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🥛</div>
+                    <h4>Dairy-Free</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Lactose-free alternatives</p>
+                </div>
+                <div style="padding: 30px; background: var(--bg-dark); border-radius: 15px;">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🥩</div>
+                    <h4>Halal</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Halal certified options</p>
+                </div>
+                <div style="padding: 30px; background: var(--bg-dark); border-radius: 15px;">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🍖</div>
+                    <h4>Keto</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem;">Low-carb selections</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-top">Chef's</span>
+                        <span class="logo-main">Kitchen</span>
+                    </a>
+                    <p>Experience the finest culinary delights crafted with passion and the freshest ingredients.</p>
+                    <div class="footer-social">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">i</a>
+                        <a href="#">y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="food.html">Our Menu</a></li>
+                        <li><a href="chef.html">Our Chefs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Reservations</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Mon - Thu: 11am - 10pm</li>
+                        <li>Fri - Sat: 11am - 11pm</li>
+                        <li>Sunday: 10am - 9pm</li>
+                        <li><a href="contacts.html">📞 888-000-4298</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chef's Kitchen. All Rights Reserved.</p>
+                <p>Designed with ❤️ for food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
